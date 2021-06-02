@@ -1,0 +1,20 @@
+
+<div>
+<h3 [ngClass]="estilo">Sheyla Yomira Correo Pèrez</h3>
+<p>Ingrese el nombre de los alumnos a la lista</p>
+<div>
+    <label for="floatingInput">Nombre:</label>
+    <input [(ngModel)]="estudiante" type="text"/>
+    <button style="color:blue ;" (click)="agregarestudiante()">Agregar nombre </button>
+</div>
+
+<div>
+    <p>{{estudiante}}</p>
+    <ol>
+        <li 
+        *ngFor="let elemento of miLista"
+        >{{ elemento }}
+    </li>
+    </ol>
+</div>
+</div>
